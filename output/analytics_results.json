@@ -1,0 +1,207 @@
+{
+  "collisions_by_borough": [
+    {
+      "borough": "BROOKLYN",
+      "count": 1601
+    },
+    {
+      "borough": "QUEENS",
+      "count": 1089
+    },
+    {
+      "borough": "MANHATTAN",
+      "count": 990
+    },
+    {
+      "borough": "BRONX",
+      "count": 820
+    },
+    {
+      "borough": "STATEN ISLAND",
+      "count": 500
+    }
+  ],
+  "top_contributing_factors": [
+    {
+      "factor": "Driver Inattention/Distraction",
+      "count": 2015
+    },
+    {
+      "factor": "Failure to Yield Right-of-Way",
+      "count": 697
+    },
+    {
+      "factor": "Following Too Closely",
+      "count": 513
+    },
+    {
+      "factor": "Passing or Lane Usage Improper",
+      "count": 408
+    },
+    {
+      "factor": "Backing Unsafely",
+      "count": 334
+    },
+    {
+      "factor": "Unsafe Speed",
+      "count": 332
+    },
+    {
+      "factor": "Turning Improperly",
+      "count": 251
+    },
+    {
+      "factor": "Traffic Control Disregarded",
+      "count": 249
+    },
+    {
+      "factor": "Pavement Slippery",
+      "count": 201
+    }
+  ],
+  "injury_severity": {
+    "total_injured": 3806,
+    "total_killed": 202,
+    "avg_injured_per_crash": 0.7612
+  },
+  "crashes_by_hour": [
+    {
+      "hour": 0,
+      "count": 241
+    },
+    {
+      "hour": 1,
+      "count": 182
+    },
+    {
+      "hour": 2,
+      "count": 217
+    },
+    {
+      "hour": 3,
+      "count": 191
+    },
+    {
+      "hour": 4,
+      "count": 196
+    },
+    {
+      "hour": 5,
+      "count": 208
+    },
+    {
+      "hour": 6,
+      "count": 201
+    },
+    {
+      "hour": 7,
+      "count": 192
+    },
+    {
+      "hour": 8,
+      "count": 192
+    },
+    {
+      "hour": 9,
+      "count": 195
+    },
+    {
+      "hour": 10,
+      "count": 219
+    },
+    {
+      "hour": 11,
+      "count": 221
+    },
+    {
+      "hour": 12,
+      "count": 199
+    },
+    {
+      "hour": 13,
+      "count": 239
+    },
+    {
+      "hour": 14,
+      "count": 209
+    },
+    {
+      "hour": 15,
+      "count": 214
+    },
+    {
+      "hour": 16,
+      "count": 226
+    },
+    {
+      "hour": 17,
+      "count": 223
+    },
+    {
+      "hour": 18,
+      "count": 192
+    },
+    {
+      "hour": 19,
+      "count": 239
+    },
+    {
+      "hour": 20,
+      "count": 194
+    },
+    {
+      "hour": 21,
+      "count": 197
+    },
+    {
+      "hour": 22,
+      "count": 219
+    },
+    {
+      "hour": 23,
+      "count": 194
+    }
+  ],
+  "top_vehicle_types": [
+    {
+      "vehicle_type": "Sedan",
+      "count": 1779
+    },
+    {
+      "vehicle_type": "Station Wagon/Sport Utility Vehicle",
+      "count": 978
+    },
+    {
+      "vehicle_type": "TAXI",
+      "count": 523
+    },
+    {
+      "vehicle_type": "Pick-up Truck",
+      "count": 418
+    },
+    {
+      "vehicle_type": "Van",
+      "count": 310
+    },
+    {
+      "vehicle_type": "Bike",
+      "count": 262
+    },
+    {
+      "vehicle_type": "Box Truck",
+      "count": 239
+    },
+    {
+      "vehicle_type": "Motorcycle",
+      "count": 220
+    },
+    {
+      "vehicle_type": "Bus",
+      "count": 211
+    },
+    {
+      "vehicle_type": "E-Bike",
+      "count": 60
+    }
+  ]
+}

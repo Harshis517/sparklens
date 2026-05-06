@@ -1,0 +1,583 @@
+{
+  "schema_issues": [],
+  "column_profiles": {
+    "crash_date": {
+      "data_type": "StringType()",
+      "nullable": true,
+      "null_count": 0,
+      "null_pct": 0.0,
+      "distinct_count": 365,
+      "completeness_pct": 100.0,
+      "min": null,
+      "max": null,
+      "mean": null,
+      "stddev": null,
+      "top_values": [
+        {
+          "value": "2023-07-09",
+          "count": 28
+        },
+        {
+          "value": "2023-12-04",
+          "count": 24
+        },
+        {
+          "value": "2023-02-28",
+          "count": 23
+        }
+      ]
+    },
+    "crash_time": {
+      "data_type": "StringType()",
+      "nullable": true,
+      "null_count": 0,
+      "null_pct": 0.0,
+      "distinct_count": 96,
+      "completeness_pct": 100.0,
+      "min": null,
+      "max": null,
+      "mean": null,
+      "stddev": null,
+      "top_values": [
+        {
+          "value": "13:00",
+          "count": 75
+        },
+        {
+          "value": "00:30",
+          "count": 74
+        },
+        {
+          "value": "11:30",
+          "count": 71
+        }
+      ]
+    },
+    "borough": {
+      "data_type": "StringType()",
+      "nullable": false,
+      "null_count": 0,
+      "null_pct": 0.0,
+      "distinct_count": 5,
+      "completeness_pct": 100.0,
+      "min": null,
+      "max": null,
+      "mean": null,
+      "stddev": null,
+      "top_values": [
+        {
+          "value": "BROOKLYN",
+          "count": 1601
+        },
+        {
+          "value": "QUEENS",
+          "count": 1089
+        },
+        {
+          "value": "MANHATTAN",
+          "count": 990
+        }
+      ]
+    },
+    "zip_code": {
+      "data_type": "StringType()",
+      "nullable": false,
+      "null_count": 0,
+      "null_pct": 0.0,
+      "distinct_count": 1560,
+      "completeness_pct": 100.0,
+      "min": null,
+      "max": null,
+      "mean": null,
+      "stddev": null,
+      "top_values": [
+        {
+          "value": "10262",
+          "count": 905
+        },
+        {
+          "value": "10250",
+          "count": 8
+        },
+        {
+          "value": "10356",
+          "count": 8
+        }
+      ]
+    },
+    "latitude": {
+      "data_type": "DoubleType()",
+      "nullable": false,
+      "null_count": 0,
+      "null_pct": 0.0,
+      "distinct_count": 3961,
+      "completeness_pct": 100.0,
+      "min": 40.500199,
+      "max": 40.919982,
+      "mean": 40.7112,
+      "stddev": 0.1086,
+      "top_values": null
+    },
+    "longitude": {
+      "data_type": "DoubleType()",
+      "nullable": false,
+      "null_count": 0,
+      "null_pct": 0.0,
+      "distinct_count": 3959,
+      "completeness_pct": 100.0,
+      "min": -74.249953,
+      "max": -73.700146,
+      "mean": -73.9745,
+      "stddev": 0.1411,
+      "top_values": null
+    },
+    "location": {
+      "data_type": "StringType()",
+      "nullable": false,
+      "null_count": 0,
+      "null_pct": 0.0,
+      "distinct_count": 3975,
+      "completeness_pct": 100.0,
+      "min": null,
+      "max": null,
+      "mean": null,
+      "stddev": null,
+      "top_values": [
+        {
+          "value": "POINT (-73.787722 40.804156)",
+          "count": 1026
+        },
+        {
+          "value": "POINT (-74.241883 40.727047)",
+          "count": 1
+        },
+        {
+          "value": "POINT (-73.732415 40.521578)",
+          "count": 1
+        }
+      ]
+    },
+    "on_street_name": {
+      "data_type": "StringType()",
+      "nullable": false,
+      "null_count": 0,
+      "null_pct": 0.0,
+      "distinct_count": 12,
+      "completeness_pct": 100.0,
+      "min": null,
+      "max": null,
+      "mean": null,
+      "stddev": null,
+      "top_values": [
+        {
+          "value": "JEROME AVENUE",
+          "count": 795
+        },
+        {
+          "value": "BROADWAY",
+          "count": 411
+        },
+        {
+          "value": "BOSTON ROAD",
+          "count": 410
+        }
+      ]
+    },
+    "cross_street_name": {
+      "data_type": "StringType()",
+      "nullable": false,
+      "null_count": 0,
+      "null_pct": 0.0,
+      "distinct_count": 12,
+      "completeness_pct": 100.0,
+      "min": null,
+      "max": null,
+      "mean": null,
+      "stddev": null,
+      "top_values": [
+        {
+          "value": "GRAND CONCOURSE",
+          "count": 2044
+        },
+        {
+          "value": "NORTHERN BOULEVARD",
+          "count": 283
+        },
+        {
+          "value": "QUEENS BOULEVARD",
+          "count": 282
+        }
+      ]
+    },
+    "number_of_persons_injured": {
+      "data_type": "LongType()",
+      "nullable": true,
+      "null_count": 0,
+      "null_pct": 0.0,
+      "distinct_count": 5,
+      "completeness_pct": 100.0,
+      "min": 0,
+      "max": 4,
+      "mean": 0.7612,
+      "stddev": 1.0388,
+      "top_values": null
+    },
+    "number_of_persons_killed": {
+      "data_type": "LongType()",
+      "nullable": true,
+      "null_count": 0,
+      "null_pct": 0.0,
+      "distinct_count": 3,
+      "completeness_pct": 100.0,
+      "min": 0,
+      "max": 2,
+      "mean": 0.0404,
+      "stddev": 0.2391,
+      "top_values": null
+    },
+    "number_of_pedestrians_injured": {
+      "data_type": "LongType()",
+      "nullable": true,
+      "null_count": 0,
+      "null_pct": 0.0,
+      "distinct_count": 3,
+      "completeness_pct": 100.0,
+      "min": 0,
+      "max": 2,
+      "mean": 0.1094,
+      "stddev": 0.3724,
+      "top_values": null
+    },
+    "number_of_pedestrians_killed": {
+      "data_type": "LongType()",
+      "nullable": true,
+      "null_count": 0,
+      "null_pct": 0.0,
+      "distinct_count": 2,
+      "completeness_pct": 100.0,
+      "min": 0,
+      "max": 1,
+      "mean": 0.0016,
+      "stddev": 0.04,
+      "top_values": null
+    },
+    "number_of_cyclist_injured": {
+      "data_type": "LongType()",
+      "nullable": true,
+      "null_count": 0,
+      "null_pct": 0.0,
+      "distinct_count": 2,
+      "completeness_pct": 100.0,
+      "min": 0,
+      "max": 1,
+      "mean": 0.0532,
+      "stddev": 0.2245,
+      "top_values": null
+    },
+    "number_of_cyclist_killed": {
+      "data_type": "LongType()",
+      "nullable": true,
+      "null_count": 0,
+      "null_pct": 0.0,
+      "distinct_count": 2,
+      "completeness_pct": 100.0,
+      "min": 0,
+      "max": 1,
+      "mean": 0.0004,
+      "stddev": 0.02,
+      "top_values": null
+    },
+    "number_of_motorist_injured": {
+      "data_type": "LongType()",
+      "nullable": true,
+      "null_count": 0,
+      "null_pct": 0.0,
+      "distinct_count": 2,
+      "completeness_pct": 100.0,
+      "min": 0,
+      "max": 1,
+      "mean": 0.0432,
+      "stddev": 0.2033,
+      "top_values": null
+    },
+    "number_of_motorist_killed": {
+      "data_type": "LongType()",
+      "nullable": true,
+      "null_count": 0,
+      "null_pct": 0.0,
+      "distinct_count": 2,
+      "completeness_pct": 100.0,
+      "min": 0,
+      "max": 1,
+      "mean": 0.0012,
+      "stddev": 0.0346,
+      "top_values": null
+    },
+    "contributing_factor_vehicle_1": {
+      "data_type": "StringType()",
+      "nullable": false,
+      "null_count": 0,
+      "null_pct": 0.0,
+      "distinct_count": 9,
+      "completeness_pct": 100.0,
+      "min": null,
+      "max": null,
+      "mean": null,
+      "stddev": null,
+      "top_values": [
+        {
+          "value": "Driver Inattention/Distraction",
+          "count": 2015
+        },
+        {
+          "value": "Failure to Yield Right-of-Way",
+          "count": 697
+        },
+        {
+          "value": "Following Too Closely",
+          "count": 513
+        }
+      ]
+    },
+    "contributing_factor_vehicle_2": {
+      "data_type": "StringType()",
+      "nullable": false,
+      "null_count": 0,
+      "null_pct": 0.0,
+      "distinct_count": 9,
+      "completeness_pct": 100.0,
+      "min": null,
+      "max": null,
+      "mean": null,
+      "stddev": null,
+      "top_values": [
+        {
+          "value": "Driver Inattention/Distraction",
+          "count": 2599
+        },
+        {
+          "value": "Failure to Yield Right-of-Way",
+          "count": 569
+        },
+        {
+          "value": "Following Too Closely",
+          "count": 419
+        }
+      ]
+    },
+    "collision_id": {
+      "data_type": "LongType()",
+      "nullable": true,
+      "null_count": 0,
+      "null_pct": 0.0,
+      "distinct_count": 5000,
+      "completeness_pct": 100.0,
+      "min": 4000000,
+      "max": 4004999,
+      "mean": 4002499.5,
+      "stddev": 1443.52,
+      "top_values": null
+    },
+    "vehicle_type_code1": {
+      "data_type": "StringType()",
+      "nullable": false,
+      "null_count": 0,
+      "null_pct": 0.0,
+      "distinct_count": 10,
+      "completeness_pct": 100.0,
+      "min": null,
+      "max": null,
+      "mean": null,
+      "stddev": null,
+      "top_values": [
+        {
+          "value": "Sedan",
+          "count": 1779
+        },
+        {
+          "value": "Station Wagon/Sport Utility Vehicle",
+          "count": 978
+        },
+        {
+          "value": "TAXI",
+          "count": 523
+        }
+      ]
+    },
+    "vehicle_type_code2": {
+      "data_type": "StringType()",
+      "nullable": false,
+      "null_count": 0,
+      "null_pct": 0.0,
+      "distinct_count": 10,
+      "completeness_pct": 100.0,
+      "min": null,
+      "max": null,
+      "mean": null,
+      "stddev": null,
+      "top_values": [
+        {
+          "value": "Sedan",
+          "count": 2236
+        },
+        {
+          "value": "Station Wagon/Sport Utility Vehicle",
+          "count": 848
+        },
+        {
+          "value": "TAXI",
+          "count": 406
+        }
+      ]
+    },
+    "number_of_persons_injured_is_outlier": {
+      "data_type": "BooleanType()",
+      "nullable": true,
+      "null_count": 0,
+      "null_pct": 0.0,
+      "distinct_count": 2,
+      "completeness_pct": 100.0,
+      "min": null,
+      "max": null,
+      "mean": null,
+      "stddev": null,
+      "top_values": [
+        {
+          "value": "False",
+          "count": 4603
+        },
+        {
+          "value": "True",
+          "count": 397
+        }
+      ]
+    },
+    "number_of_persons_killed_is_outlier": {
+      "data_type": "BooleanType()",
+      "nullable": true,
+      "null_count": 0,
+      "null_pct": 0.0,
+      "distinct_count": 2,
+      "completeness_pct": 100.0,
+      "min": null,
+      "max": null,
+      "mean": null,
+      "stddev": null,
+      "top_values": [
+        {
+          "value": "False",
+          "count": 4844
+        },
+        {
+          "value": "True",
+          "count": 156
+        }
+      ]
+    },
+    "number_of_pedestrians_injured_is_outlier": {
+      "data_type": "BooleanType()",
+      "nullable": true,
+      "null_count": 0,
+      "null_pct": 0.0,
+      "distinct_count": 2,
+      "completeness_pct": 100.0,
+      "min": null,
+      "max": null,
+      "mean": null,
+      "stddev": null,
+      "top_values": [
+        {
+          "value": "False",
+          "count": 4556
+        },
+        {
+          "value": "True",
+          "count": 444
+        }
+      ]
+    },
+    "number_of_cyclist_injured_is_outlier": {
+      "data_type": "BooleanType()",
+      "nullable": true,
+      "null_count": 0,
+      "null_pct": 0.0,
+      "distinct_count": 2,
+      "completeness_pct": 100.0,
+      "min": null,
+      "max": null,
+      "mean": null,
+      "stddev": null,
+      "top_values": [
+        {
+          "value": "False",
+          "count": 4734
+        },
+        {
+          "value": "True",
+          "count": 266
+        }
+      ]
+    },
+    "number_of_motorist_injured_is_outlier": {
+      "data_type": "BooleanType()",
+      "nullable": true,
+      "null_count": 0,
+      "null_pct": 0.0,
+      "distinct_count": 2,
+      "completeness_pct": 100.0,
+      "min": null,
+      "max": null,
+      "mean": null,
+      "stddev": null,
+      "top_values": [
+        {
+          "value": "False",
+          "count": 4784
+        },
+        {
+          "value": "True",
+          "count": 216
+        }
+      ]
+    },
+    "latitude_is_outlier": {
+      "data_type": "BooleanType()",
+      "nullable": false,
+      "null_count": 0,
+      "null_pct": 0.0,
+      "distinct_count": 1,
+      "completeness_pct": 100.0,
+      "min": null,
+      "max": null,
+      "mean": null,
+      "stddev": null,
+      "top_values": [
+        {
+          "value": "False",
+          "count": 5000
+        }
+      ]
+    },
+    "longitude_is_outlier": {
+      "data_type": "BooleanType()",
+      "nullable": false,
+      "null_count": 0,
+      "null_pct": 0.0,
+      "distinct_count": 1,
+      "completeness_pct": 100.0,
+      "min": null,
+      "max": null,
+      "mean": null,
+      "stddev": null,
+      "top_values": [
+        {
+          "value": "False",
+          "count": 5000
+        }
+      ]
+    }
+  },
+  "quality_score": 100.0,
+  "total_rows": 5000,
+  "total_columns": 29
+}
