@@ -137,12 +137,15 @@ def cast_schema(df):
 def main():
     parser = argparse.ArgumentParser(description="SparkLens NYC Collisions Pipeline")
     parser.add_argument("--input",  default="collisions.csv", help="Input CSV path")
-    parser.add_argument("--output", default="./output",       help="Output directory")
+    parser.add_argument("--output", default="./output",       help="Output directory (local)")
     args = parser.parse_args()
 
-    os.makedirs(args.output, exist_ok=True)
-    PIPELINE_CONFIG["pre_profile_output"]  = os.path.join(args.output, "pre_profile.json")
-    PIPELINE_CONFIG["post_profile_output"] = os.path.join(args.output, "post_profile.json")
+    # Always resolve to absolute local path
+    output_dir = os.path.abspath(args.output)
+    os.makedirs(output_dir, exist_ok=True)
+
+    PIPELINE_CONFIG["pre_profile_output"]  = os.path.join(output_dir, "pre_profile.json")
+    PIPELINE_CONFIG["post_profile_output"] = os.path.join(output_dir, "post_profile.json")
 
     # ── Load data ────────────────────────────────────────────────────
     spark = build_spark()
@@ -161,19 +164,19 @@ def main():
     pipeline.print_summary()
 
     # ── Save full report ─────────────────────────────────────────────
-    report_path = os.path.join(args.output, "sparklens_report.json")
+    report_path = os.path.join(output_dir, "sparklens_report.json")
     with open(report_path, "w") as f:
         json.dump(pipeline.get_full_report(), f, indent=2, default=str)
     logger.info(f"Full report saved: {report_path}")
 
-    # ── Save cleaned data ────────────────────────────────────────────
-    clean_path = os.path.join(args.output, "collisions_clean.csv")
-    df_clean.coalesce(1).write.csv(clean_path, header=True, mode="overwrite")
+    # ── Save cleaned data (use pandas to avoid HDFS write issues) ────
+    clean_path = os.path.join(output_dir, "collisions_clean.csv")
+    df_clean.toPandas().to_csv(clean_path, index=False)
     logger.info(f"Cleaned data saved: {clean_path}")
 
     # ── Domain analytics on clean data ───────────────────────────────
     logger.info("Running domain analytics on cleaned dataset...")
-    _run_analytics(df_clean, args.output)
+    _run_analytics(df_clean, output_dir)
 
     spark.stop()
     logger.info("Done.")
