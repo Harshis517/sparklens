@@ -3,7 +3,7 @@
 **A Reusable Spark-Based Library for Data Cleaning and Quality Assessment**
 
 > Team: Harshita Singh (hs5412) · Utkarsh Arora (ua2152) · Debdeep Naha (dn2491)
-> Big Data Analytics Symposium, Spring 2026
+> Big Data Application Development, Spring 2026
 
 ---
 
